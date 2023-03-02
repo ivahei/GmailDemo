@@ -5,15 +5,14 @@
 //  Created by Vahe Abazyan on 02.03.23.
 //
 
+import Combine
 import UIKit
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-
-
+class ViewController<ViewModel>: UIViewController {
+    
+    var viewModel: ViewModel!
+    var subscriptions = Set<AnyCancellable>()
+    
+    func setupBindings() {}
+    ///
 }
-
