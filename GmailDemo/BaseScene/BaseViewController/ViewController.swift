@@ -8,11 +8,12 @@
 import Combine
 import UIKit
 
-class ViewController<ViewModel>: UIViewController {
-    
+class ViewController<ViewModel, C: Coordinator>: UIViewController {
+
     var viewModel: ViewModel!
+    unowned var coordinator: C!
+
     var subscriptions = Set<AnyCancellable>()
-    
+
     func setupBindings() {}
-    ///
 }
