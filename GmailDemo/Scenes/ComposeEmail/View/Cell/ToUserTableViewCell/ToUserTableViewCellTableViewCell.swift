@@ -16,6 +16,8 @@ final class ToUserTableViewCellTableViewCell: UITableViewCell {
     
     @IBOutlet private weak var arrowButton: UIButton!
     @IBOutlet private weak var toTextField: UITextField!
+    @IBOutlet private weak var ccTextField: UITextField!
+    @IBOutlet private weak var bccTextField: UITextField!
     @IBOutlet private weak var toStackView: UIStackView!
     @IBOutlet private weak var bccStackView: UIStackView!
     
@@ -23,6 +25,8 @@ final class ToUserTableViewCellTableViewCell: UITableViewCell {
         super.awakeFromNib()
         
         toTextField.delegate = self
+        ccTextField.delegate = self
+        bccTextField.delegate = self
     }
 
     weak var delegate: ToCellInteractingDelegate?
@@ -47,6 +51,13 @@ final class ToUserTableViewCellTableViewCell: UITableViewCell {
 
 extension ToUserTableViewCellTableViewCell: UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField) {
-        delegate?.shouldEnableSendButton(!(textField.text?.isEmpty ?? true))
+        if textField == toTextField {
+            delegate?.shouldEnableSendButton(!(textField.text?.isEmpty ?? true))
+        }
+    }
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 }
