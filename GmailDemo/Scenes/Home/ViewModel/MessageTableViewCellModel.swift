@@ -5,10 +5,12 @@
 //  Created by Vahe Abazyan on 02.03.23.
 //
 
-import Foundation
+import UIKit
 
-struct MessageTableViewCellModel {
+struct MessageTableViewCellModel: Equatable {
+    let id: UUID
     var imageReference: String? = nil
+    let avatarColor: UIColor
     let sender: String
     let time: String
     let title: String

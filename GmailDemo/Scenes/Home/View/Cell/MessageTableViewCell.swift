@@ -36,7 +36,9 @@ final class MessageTableViewCell: UITableViewCell {
 
         guard let cellModel else { return }
 
-        avatarView.avatarViewModel = AvatarViewModel(title: cellModel.sender)
+        avatarView.avatarViewModel = AvatarViewModel(title: cellModel.sender,
+                                                     imageReference: cellModel.imageReference,
+                                                     color: cellModel.avatarColor)
         sender.text = cellModel.sender
         time.text = cellModel.time
         title.text = cellModel.title
