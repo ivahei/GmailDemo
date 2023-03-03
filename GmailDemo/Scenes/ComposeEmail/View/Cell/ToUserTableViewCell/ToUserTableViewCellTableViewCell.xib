@@ -120,6 +120,8 @@
             <connections>
                 <outlet property="arrowButton" destination="llc-Un-AVR" id="M5G-I1-KL1"/>
                 <outlet property="bccStackView" destination="XFN-wH-dUD" id="muA-zO-f0K"/>
+                <outlet property="bccTextField" destination="8Rs-pa-4Hb" id="TsF-Nl-E8p"/>
+                <outlet property="ccTextField" destination="Xvo-5m-KRm" id="w29-JX-epl"/>
                 <outlet property="toStackView" destination="fWR-WL-Aw7" id="tnd-fK-MP3"/>
                 <outlet property="toTextField" destination="0GY-k2-VHe" id="TgQ-7D-TaR"/>
             </connections>

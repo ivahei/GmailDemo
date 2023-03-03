@@ -7,17 +7,21 @@
 
 import UIKit
 
-class SubjectTableViewCell: UITableViewCell {
+final class SubjectTableViewCell: UITableViewCell {
+
+    @IBOutlet private weak var subjectTextField: UITextField!
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        subjectTextField.delegate = self
     }
+}
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+extension SubjectTableViewCell: UITextFieldDelegate {
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 }
