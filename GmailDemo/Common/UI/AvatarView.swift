@@ -46,9 +46,9 @@ final class AvatarView: UIView {
         backgroundColor = .clear
     }
     
-    lazy var avatarContainerView = createContainerView()
-    lazy var defaultAvatarLabel = createLabel()
-    lazy var avatarImageView = createImageView()
+    lazy private var avatarContainerView = createContainerView()
+    lazy private var defaultAvatarLabel = createLabel()
+    lazy private var avatarImageView = createImageView()
     
     private func configure(_ avatarViewModel: AvatarViewModel?) {
 

@@ -8,13 +8,17 @@
 import Combine
 import UIKit
 
-final class HomeViewController: ViewController<HomeViewModel, HomeCoordinator> {
+final class HomeViewController: ViewController<HomeViewModel, HomeCoordinator>,
+                                SnackBarViewShowable {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var composeButton: UIButton!
+    @IBOutlet weak var headerView: UIView!
+    @IBOutlet weak var avatarView: AvatarView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         setupUI()
         tableView.register(MessageTableViewCell.self)
@@ -36,7 +40,23 @@ final class HomeViewController: ViewController<HomeViewModel, HomeCoordinator> {
     }
     
     private func setupUI() {
+        setupShadows()
+        setupAvatarView()
+        showSnackBar(with: "Signed in as va.abazyan@gmail.com")
+    }
+    
+    private func setupAvatarView() {
+        avatarView.avatarViewModel = AvatarViewModel(title: "Vahe Abazyan",
+                                                     imageReference: "https://media.licdn.com/dms/image/C5603AQERhYE9mUFXIA/profile-displayphoto-shrink_800_800/0/1613651362650?e=2147483647&v=beta&t=j3oVR0PoFscQZTyKkS2nZXhesYE47maEoiGeLit9f7M",
+                                                     color: UIColor.getRandomColor())
+    }
+    
+    private func setupShadows() {
         composeButton.addShadow()
+        headerView.addShadow(shadowOpacity: 0.1,
+                             cornerRadius: 8,
+                             shadowColor: .black,
+                             shadowRadius: 4)
     }
     
     @IBAction func composeButtonAction(_ sender: UIButton) {
@@ -119,6 +139,13 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 extension HomeViewController: MessageCellInteractionDelegate {
     func didTapOnFavorite(id: UUID?, isFavorite: Bool) {
         viewModel.updateFavorite(with: id, isFavorite: isFavorite)
+    }
+}
+
+extension HomeViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 }
 

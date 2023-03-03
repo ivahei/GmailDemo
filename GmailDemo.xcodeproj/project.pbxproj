@@ -15,6 +15,7 @@
 		ED35FD1229B23FDD0063C26B /* SubjectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED35FD1029B23FDD0063C26B /* SubjectTableViewCell.xib */; };
 		ED35FD1529B23FFE0063C26B /* ComposeEmailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED35FD1329B23FFE0063C26B /* ComposeEmailTableViewCell.swift */; };
 		ED35FD1629B23FFE0063C26B /* ComposeEmailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED35FD1429B23FFE0063C26B /* ComposeEmailTableViewCell.xib */; };
+		ED35FD1C29B27E410063C26B /* SnackBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED35FD1B29B27E410063C26B /* SnackBarView.swift */; };
 		ED7653D129B0CC5C00CC8DB2 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7653D029B0CC5C00CC8DB2 /* BaseCoordinator.swift */; };
 		ED7653D429B0CDC200CC8DB2 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7653D329B0CDC200CC8DB2 /* AppCoordinator.swift */; };
 		ED7653D629B0CFB600CC8DB2 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7653D529B0CFB600CC8DB2 /* HomeCoordinator.swift */; };
@@ -57,6 +58,7 @@
 		ED35FD1029B23FDD0063C26B /* SubjectTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubjectTableViewCell.xib; sourceTree = "<group>"; };
 		ED35FD1329B23FFE0063C26B /* ComposeEmailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeEmailTableViewCell.swift; sourceTree = "<group>"; };
 		ED35FD1429B23FFE0063C26B /* ComposeEmailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComposeEmailTableViewCell.xib; sourceTree = "<group>"; };
+		ED35FD1B29B27E410063C26B /* SnackBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackBarView.swift; sourceTree = "<group>"; };
 		ED7653D029B0CC5C00CC8DB2 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		ED7653D329B0CDC200CC8DB2 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		ED7653D529B0CFB600CC8DB2 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				ED7653E029B104E000CC8DB2 /* AvatarView.swift */,
+				ED35FD1B29B27E410063C26B /* SnackBarView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -447,6 +450,7 @@
 				ED932FA629B202F7008EDE22 /* HomeService.swift in Sources */,
 				ED7653E329B1063600CC8DB2 /* MessageTableViewCellModel.swift in Sources */,
 				ED7653E129B104E000CC8DB2 /* AvatarView.swift in Sources */,
+				ED35FD1C29B27E410063C26B /* SnackBarView.swift in Sources */,
 				ED932FBB29B229C6008EDE22 /* UIViewController+Extension.swift in Sources */,
 				ED7653D629B0CFB600CC8DB2 /* HomeCoordinator.swift in Sources */,
 				EDE3212029B0B26B00FD3549 /* ViewController.swift in Sources */,
