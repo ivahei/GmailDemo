@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED35FD0729B23EBA0063C26B /* ToUserTableViewCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED35FD0529B23EBA0063C26B /* ToUserTableViewCellTableViewCell.swift */; };
+		ED35FD0829B23EBA0063C26B /* ToUserTableViewCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED35FD0629B23EBA0063C26B /* ToUserTableViewCellTableViewCell.xib */; };
+		ED35FD0C29B23EE00063C26B /* FromUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED35FD0A29B23EE00063C26B /* FromUserTableViewCell.swift */; };
+		ED35FD0D29B23EE00063C26B /* FromUserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED35FD0B29B23EE00063C26B /* FromUserTableViewCell.xib */; };
+		ED35FD1129B23FDD0063C26B /* SubjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED35FD0F29B23FDD0063C26B /* SubjectTableViewCell.swift */; };
+		ED35FD1229B23FDD0063C26B /* SubjectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED35FD1029B23FDD0063C26B /* SubjectTableViewCell.xib */; };
+		ED35FD1529B23FFE0063C26B /* ComposeEmailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED35FD1329B23FFE0063C26B /* ComposeEmailTableViewCell.swift */; };
+		ED35FD1629B23FFE0063C26B /* ComposeEmailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED35FD1429B23FFE0063C26B /* ComposeEmailTableViewCell.xib */; };
 		ED7653D129B0CC5C00CC8DB2 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7653D029B0CC5C00CC8DB2 /* BaseCoordinator.swift */; };
 		ED7653D429B0CDC200CC8DB2 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7653D329B0CDC200CC8DB2 /* AppCoordinator.swift */; };
 		ED7653D629B0CFB600CC8DB2 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7653D529B0CFB600CC8DB2 /* HomeCoordinator.swift */; };
@@ -41,6 +49,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ED35FD0529B23EBA0063C26B /* ToUserTableViewCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToUserTableViewCellTableViewCell.swift; sourceTree = "<group>"; };
+		ED35FD0629B23EBA0063C26B /* ToUserTableViewCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToUserTableViewCellTableViewCell.xib; sourceTree = "<group>"; };
+		ED35FD0A29B23EE00063C26B /* FromUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FromUserTableViewCell.swift; sourceTree = "<group>"; };
+		ED35FD0B29B23EE00063C26B /* FromUserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FromUserTableViewCell.xib; sourceTree = "<group>"; };
+		ED35FD0F29B23FDD0063C26B /* SubjectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectTableViewCell.swift; sourceTree = "<group>"; };
+		ED35FD1029B23FDD0063C26B /* SubjectTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubjectTableViewCell.xib; sourceTree = "<group>"; };
+		ED35FD1329B23FFE0063C26B /* ComposeEmailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeEmailTableViewCell.swift; sourceTree = "<group>"; };
+		ED35FD1429B23FFE0063C26B /* ComposeEmailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComposeEmailTableViewCell.xib; sourceTree = "<group>"; };
 		ED7653D029B0CC5C00CC8DB2 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		ED7653D329B0CDC200CC8DB2 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		ED7653D529B0CFB600CC8DB2 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
@@ -87,6 +103,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED35FD0929B23ECA0063C26B /* FromUserTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				ED35FD0A29B23EE00063C26B /* FromUserTableViewCell.swift */,
+				ED35FD0B29B23EE00063C26B /* FromUserTableViewCell.xib */,
+			);
+			path = FromUserTableViewCell;
+			sourceTree = "<group>";
+		};
+		ED35FD0E29B23FBD0063C26B /* SubjectTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				ED35FD0F29B23FDD0063C26B /* SubjectTableViewCell.swift */,
+				ED35FD1029B23FDD0063C26B /* SubjectTableViewCell.xib */,
+			);
+			path = SubjectTableViewCell;
+			sourceTree = "<group>";
+		};
+		ED35FD1729B240020063C26B /* ComposeEmailTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				ED35FD1329B23FFE0063C26B /* ComposeEmailTableViewCell.swift */,
+				ED35FD1429B23FFE0063C26B /* ComposeEmailTableViewCell.xib */,
+			);
+			path = ComposeEmailTableViewCell;
+			sourceTree = "<group>";
+		};
 		ED7653CD29B0C91700CC8DB2 /* BaseViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +243,7 @@
 		ED932FAB29B220A3008EDE22 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				ED932FBC29B23DD4008EDE22 /* Cell */,
 				ED932FAD29B2210F008EDE22 /* ComposeEmailViewController.swift */,
 				ED932FAE29B2210F008EDE22 /* ComposeEmailViewController.xib */,
 			);
@@ -220,6 +264,26 @@
 				ED932FB629B2230E008EDE22 /* ComposeEmailService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		ED932FBC29B23DD4008EDE22 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				ED932FC129B23E67008EDE22 /* ToUserTableViewCell */,
+				ED35FD0929B23ECA0063C26B /* FromUserTableViewCell */,
+				ED35FD0E29B23FBD0063C26B /* SubjectTableViewCell */,
+				ED35FD1729B240020063C26B /* ComposeEmailTableViewCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		ED932FC129B23E67008EDE22 /* ToUserTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				ED35FD0529B23EBA0063C26B /* ToUserTableViewCellTableViewCell.swift */,
+				ED35FD0629B23EBA0063C26B /* ToUserTableViewCellTableViewCell.xib */,
+			);
+			path = ToUserTableViewCell;
 			sourceTree = "<group>";
 		};
 		EDE320FF29B0B11300FD3549 = {
@@ -350,10 +414,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDE3211829B0B11500FD3549 /* LaunchScreen.storyboard in Resources */,
+				ED35FD0829B23EBA0063C26B /* ToUserTableViewCellTableViewCell.xib in Resources */,
+				ED35FD1629B23FFE0063C26B /* ComposeEmailTableViewCell.xib in Resources */,
 				ED7653DD29B0FE3800CC8DB2 /* MessageTableViewCell.xib in Resources */,
 				EDE3211529B0B11500FD3549 /* Assets.xcassets in Resources */,
+				ED35FD1229B23FDD0063C26B /* SubjectTableViewCell.xib in Resources */,
 				EDE3212629B0BB6300FD3549 /* HomeViewController.xib in Resources */,
 				ED932FB029B2210F008EDE22 /* ComposeEmailViewController.xib in Resources */,
+				ED35FD0D29B23EE00063C26B /* FromUserTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,8 +435,10 @@
 				ED7653EC29B110DF00CC8DB2 /* String+Extension.swift in Sources */,
 				EDE3212529B0BB6300FD3549 /* HomeViewController.swift in Sources */,
 				ED932FB429B22282008EDE22 /* ComposeEmailCoordinator.swift in Sources */,
+				ED35FD0C29B23EE00063C26B /* FromUserTableViewCell.swift in Sources */,
 				ED932FB729B2230E008EDE22 /* ComposeEmailService.swift in Sources */,
 				EDE3212B29B0BBBA00FD3549 /* HomeViewModel.swift in Sources */,
+				ED35FD0729B23EBA0063C26B /* ToUserTableViewCellTableViewCell.swift in Sources */,
 				ED7653D829B0E13800CC8DB2 /* SceneDelegate.swift in Sources */,
 				ED932FB229B22253008EDE22 /* ComposeEmailViewModel.swift in Sources */,
 				ED7653EE29B1126B00CC8DB2 /* UIColor+Extension.swift in Sources */,
@@ -386,7 +456,9 @@
 				ED7653F329B1D8E500CC8DB2 /* ImageLoader.swift in Sources */,
 				EDE3212229B0B46500FD3549 /* ViewModel.swift in Sources */,
 				ED7653E529B107F200CC8DB2 /* UITableView+Extension.swift in Sources */,
+				ED35FD1129B23FDD0063C26B /* SubjectTableViewCell.swift in Sources */,
 				ED932FA829B20604008EDE22 /* MailModel.swift in Sources */,
+				ED35FD1529B23FFE0063C26B /* ComposeEmailTableViewCell.swift in Sources */,
 				ED7653E829B1084A00CC8DB2 /* NSObject+Extension.swift in Sources */,
 				ED932FAF29B2210F008EDE22 /* ComposeEmailViewController.swift in Sources */,
 			);
