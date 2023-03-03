@@ -9,6 +9,7 @@ import UIKit
 
 extension UIViewController {
     func setupCloseButtonItem(imageName: String? = nil,
+                              color: UIColor = .darkGray,
                               selector: Selector = #selector(closeButtonItemAction)) {
         let backButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: selector)
 
@@ -18,7 +19,7 @@ extension UIViewController {
             backButtonItem.image = UIImage(systemName: "xmark")
         }
     
-        backButtonItem.tintColor = .black
+        backButtonItem.tintColor = color
         self.navigationItem.leftItemsSupplementBackButton = false
         self.navigationItem.leftBarButtonItem = backButtonItem
     }

@@ -25,4 +25,9 @@ final class ComposeEmailCoordinator: BaseCoordinator<UINavigationController> {
             rootViewController,
             animated: true)
     }
+    
+    override func back() {
+        rootViewController.popViewController(animated: true)
+        presentOn.dismiss(animated: true)
+    }
 }
