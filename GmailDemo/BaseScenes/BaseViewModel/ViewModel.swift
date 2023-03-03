@@ -8,13 +8,16 @@
 import Combine
 import UIKit
 
-protocol Bindable {
+protocol ViewModel {
     func configureOutput()
 }
 
-class ViewModel: Bindable {
+class BaseViewModel<Service>: ViewModel {
 
-    init() {
+    var service: Service
+
+    init(service: Service) {
+        self.service = service
         configureOutput()
     }
 

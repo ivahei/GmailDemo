@@ -8,9 +8,15 @@
 import Combine
 import UIKit
 
-class ViewController<ViewModel, C: Coordinator>: UIViewController {
+class ViewController<VM: ViewModel, C: Coordinator>: UIViewController {
 
-    var viewModel: ViewModel!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        setupBindings()
+    }
+
+    var viewModel: VM!
     unowned var coordinator: C!
 
     var subscriptions = Set<AnyCancellable>()

@@ -11,6 +11,21 @@
 		ED7653D429B0CDC200CC8DB2 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7653D329B0CDC200CC8DB2 /* AppCoordinator.swift */; };
 		ED7653D629B0CFB600CC8DB2 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7653D529B0CFB600CC8DB2 /* HomeCoordinator.swift */; };
 		ED7653D829B0E13800CC8DB2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7653D729B0E13800CC8DB2 /* SceneDelegate.swift */; };
+		ED7653DC29B0FE3800CC8DB2 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7653DA29B0FE3800CC8DB2 /* MessageTableViewCell.swift */; };
+		ED7653DD29B0FE3800CC8DB2 /* MessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED7653DB29B0FE3800CC8DB2 /* MessageTableViewCell.xib */; };
+		ED7653E129B104E000CC8DB2 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7653E029B104E000CC8DB2 /* AvatarView.swift */; };
+		ED7653E329B1063600CC8DB2 /* MessageTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7653E229B1063600CC8DB2 /* MessageTableViewCellModel.swift */; };
+		ED7653E529B107F200CC8DB2 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7653E429B107F200CC8DB2 /* UITableView+Extension.swift */; };
+		ED7653E829B1084A00CC8DB2 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7653E729B1084A00CC8DB2 /* NSObject+Extension.swift */; };
+		ED7653EA29B10C8200CC8DB2 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7653E929B10C8200CC8DB2 /* UIView+Extension.swift */; };
+		ED7653EC29B110DF00CC8DB2 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7653EB29B110DF00CC8DB2 /* String+Extension.swift */; };
+		ED7653EE29B1126B00CC8DB2 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7653ED29B1126B00CC8DB2 /* UIColor+Extension.swift */; };
+		ED7653F129B1D88800CC8DB2 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = ED7653F029B1D88800CC8DB2 /* SDWebImage */; };
+		ED7653F329B1D8E500CC8DB2 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7653F229B1D8E500CC8DB2 /* ImageLoader.swift */; };
+		ED932FA629B202F7008EDE22 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED932FA529B202F7008EDE22 /* HomeService.swift */; };
+		ED932FA829B20604008EDE22 /* MailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED932FA729B20604008EDE22 /* MailModel.swift */; };
+		ED932FAF29B2210F008EDE22 /* ComposeEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED932FAD29B2210F008EDE22 /* ComposeEmailViewController.swift */; };
+		ED932FB029B2210F008EDE22 /* ComposeEmailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED932FAE29B2210F008EDE22 /* ComposeEmailViewController.xib */; };
 		EDE3210C29B0B11300FD3549 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE3210B29B0B11300FD3549 /* AppDelegate.swift */; };
 		EDE3211529B0B11500FD3549 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDE3211429B0B11500FD3549 /* Assets.xcassets */; };
 		EDE3211829B0B11500FD3549 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDE3211629B0B11500FD3549 /* LaunchScreen.storyboard */; };
@@ -26,6 +41,20 @@
 		ED7653D329B0CDC200CC8DB2 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		ED7653D529B0CFB600CC8DB2 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		ED7653D729B0E13800CC8DB2 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		ED7653DA29B0FE3800CC8DB2 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		ED7653DB29B0FE3800CC8DB2 /* MessageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageTableViewCell.xib; sourceTree = "<group>"; };
+		ED7653E029B104E000CC8DB2 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		ED7653E229B1063600CC8DB2 /* MessageTableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCellModel.swift; sourceTree = "<group>"; };
+		ED7653E429B107F200CC8DB2 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		ED7653E729B1084A00CC8DB2 /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
+		ED7653E929B10C8200CC8DB2 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		ED7653EB29B110DF00CC8DB2 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		ED7653ED29B1126B00CC8DB2 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		ED7653F229B1D8E500CC8DB2 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		ED932FA529B202F7008EDE22 /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
+		ED932FA729B20604008EDE22 /* MailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailModel.swift; sourceTree = "<group>"; };
+		ED932FAD29B2210F008EDE22 /* ComposeEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeEmailViewController.swift; sourceTree = "<group>"; };
+		ED932FAE29B2210F008EDE22 /* ComposeEmailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComposeEmailViewController.xib; sourceTree = "<group>"; };
 		EDE3210829B0B11300FD3549 /* GmailDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GmailDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDE3210B29B0B11300FD3549 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDE3211429B0B11500FD3549 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -43,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED7653F129B1D88800CC8DB2 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,14 +95,14 @@
 			path = BaseViewModel;
 			sourceTree = "<group>";
 		};
-		ED7653CF29B0CC3B00CC8DB2 /* BaseScene */ = {
+		ED7653CF29B0CC3B00CC8DB2 /* BaseScenes */ = {
 			isa = PBXGroup;
 			children = (
 				ED7653CD29B0C91700CC8DB2 /* BaseViewController */,
 				ED7653CE29B0C9AD00CC8DB2 /* BaseViewModel */,
 				ED7653D229B0CC6000CC8DB2 /* BaseCoordinator */,
 			);
-			path = BaseScene;
+			path = BaseScenes;
 			sourceTree = "<group>";
 		};
 		ED7653D229B0CC6000CC8DB2 /* BaseCoordinator */ = {
@@ -81,6 +111,95 @@
 				ED7653D029B0CC5C00CC8DB2 /* BaseCoordinator.swift */,
 			);
 			path = BaseCoordinator;
+			sourceTree = "<group>";
+		};
+		ED7653D929B0FE1400CC8DB2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				ED7653DA29B0FE3800CC8DB2 /* MessageTableViewCell.swift */,
+				ED7653DB29B0FE3800CC8DB2 /* MessageTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		ED7653DE29B104BD00CC8DB2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				ED7653E629B107F700CC8DB2 /* Extensions */,
+				ED7653DF29B104CF00CC8DB2 /* UI */,
+				ED7653F429B1D8E900CC8DB2 /* Network */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		ED7653DF29B104CF00CC8DB2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				ED7653E029B104E000CC8DB2 /* AvatarView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		ED7653E629B107F700CC8DB2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ED7653E429B107F200CC8DB2 /* UITableView+Extension.swift */,
+				ED7653E729B1084A00CC8DB2 /* NSObject+Extension.swift */,
+				ED7653E929B10C8200CC8DB2 /* UIView+Extension.swift */,
+				ED7653EB29B110DF00CC8DB2 /* String+Extension.swift */,
+				ED7653ED29B1126B00CC8DB2 /* UIColor+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ED7653F429B1D8E900CC8DB2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				ED7653F229B1D8E500CC8DB2 /* ImageLoader.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		ED932FA429B202E4008EDE22 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				ED932FA529B202F7008EDE22 /* HomeService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		ED932FA929B22047008EDE22 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				EDE3212729B0BB8300FD3549 /* Home */,
+				ED932FAA29B22074008EDE22 /* ComposeEmail */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		ED932FAA29B22074008EDE22 /* ComposeEmail */ = {
+			isa = PBXGroup;
+			children = (
+				ED932FAB29B220A3008EDE22 /* View */,
+				ED932FAC29B220B3008EDE22 /* ViewModel */,
+			);
+			path = ComposeEmail;
+			sourceTree = "<group>";
+		};
+		ED932FAB29B220A3008EDE22 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ED932FAD29B2210F008EDE22 /* ComposeEmailViewController.swift */,
+				ED932FAE29B2210F008EDE22 /* ComposeEmailViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ED932FAC29B220B3008EDE22 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		EDE320FF29B0B11300FD3549 = {
@@ -105,8 +224,9 @@
 				EDE3210B29B0B11300FD3549 /* AppDelegate.swift */,
 				ED7653D729B0E13800CC8DB2 /* SceneDelegate.swift */,
 				ED7653D329B0CDC200CC8DB2 /* AppCoordinator.swift */,
-				EDE3212729B0BB8300FD3549 /* Home */,
-				ED7653CF29B0CC3B00CC8DB2 /* BaseScene */,
+				ED932FA929B22047008EDE22 /* Scenes */,
+				ED7653CF29B0CC3B00CC8DB2 /* BaseScenes */,
+				ED7653DE29B104BD00CC8DB2 /* Common */,
 				EDE3211429B0B11500FD3549 /* Assets.xcassets */,
 				EDE3211629B0B11500FD3549 /* LaunchScreen.storyboard */,
 				EDE3211929B0B11500FD3549 /* Info.plist */,
@@ -120,6 +240,7 @@
 				ED7653D529B0CFB600CC8DB2 /* HomeCoordinator.swift */,
 				EDE3212829B0BB9C00FD3549 /* View */,
 				EDE3212929B0BBA500FD3549 /* ViewModel */,
+				ED932FA429B202E4008EDE22 /* Service */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -127,6 +248,7 @@
 		EDE3212829B0BB9C00FD3549 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				ED7653D929B0FE1400CC8DB2 /* Cell */,
 				EDE3212329B0BB6300FD3549 /* HomeViewController.swift */,
 				EDE3212429B0BB6300FD3549 /* HomeViewController.xib */,
 			);
@@ -136,7 +258,9 @@
 		EDE3212929B0BBA500FD3549 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				ED7653E229B1063600CC8DB2 /* MessageTableViewCellModel.swift */,
 				EDE3212A29B0BBBA00FD3549 /* HomeViewModel.swift */,
+				ED932FA729B20604008EDE22 /* MailModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -157,6 +281,9 @@
 			dependencies = (
 			);
 			name = GmailDemo;
+			packageProductDependencies = (
+				ED7653F029B1D88800CC8DB2 /* SDWebImage */,
+			);
 			productName = GmailDemo;
 			productReference = EDE3210829B0B11300FD3549 /* GmailDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -185,6 +312,9 @@
 				Base,
 			);
 			mainGroup = EDE320FF29B0B11300FD3549;
+			packageReferences = (
+				ED7653EF29B1D88800CC8DB2 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = EDE3210929B0B11300FD3549 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -200,8 +330,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDE3211829B0B11500FD3549 /* LaunchScreen.storyboard in Resources */,
+				ED7653DD29B0FE3800CC8DB2 /* MessageTableViewCell.xib in Resources */,
 				EDE3211529B0B11500FD3549 /* Assets.xcassets in Resources */,
 				EDE3212629B0BB6300FD3549 /* HomeViewController.xib in Resources */,
+				ED932FB029B2210F008EDE22 /* ComposeEmailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,15 +344,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED7653EC29B110DF00CC8DB2 /* String+Extension.swift in Sources */,
 				EDE3212529B0BB6300FD3549 /* HomeViewController.swift in Sources */,
 				EDE3212B29B0BBBA00FD3549 /* HomeViewModel.swift in Sources */,
 				ED7653D829B0E13800CC8DB2 /* SceneDelegate.swift in Sources */,
+				ED7653EE29B1126B00CC8DB2 /* UIColor+Extension.swift in Sources */,
+				ED7653EA29B10C8200CC8DB2 /* UIView+Extension.swift in Sources */,
+				ED7653DC29B0FE3800CC8DB2 /* MessageTableViewCell.swift in Sources */,
+				ED932FA629B202F7008EDE22 /* HomeService.swift in Sources */,
+				ED7653E329B1063600CC8DB2 /* MessageTableViewCellModel.swift in Sources */,
+				ED7653E129B104E000CC8DB2 /* AvatarView.swift in Sources */,
 				ED7653D629B0CFB600CC8DB2 /* HomeCoordinator.swift in Sources */,
 				EDE3212029B0B26B00FD3549 /* ViewController.swift in Sources */,
 				EDE3210C29B0B11300FD3549 /* AppDelegate.swift in Sources */,
 				ED7653D429B0CDC200CC8DB2 /* AppCoordinator.swift in Sources */,
 				ED7653D129B0CC5C00CC8DB2 /* BaseCoordinator.swift in Sources */,
+				ED7653F329B1D8E500CC8DB2 /* ImageLoader.swift in Sources */,
 				EDE3212229B0B46500FD3549 /* ViewModel.swift in Sources */,
+				ED7653E529B107F200CC8DB2 /* UITableView+Extension.swift in Sources */,
+				ED932FA829B20604008EDE22 /* MailModel.swift in Sources */,
+				ED7653E829B1084A00CC8DB2 /* NSObject+Extension.swift in Sources */,
+				ED932FAF29B2210F008EDE22 /* ComposeEmailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,8 +508,7 @@
 				INFOPLIST_FILE = GmailDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -391,8 +534,7 @@
 				INFOPLIST_FILE = GmailDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -428,6 +570,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ED7653EF29B1D88800CC8DB2 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ED7653F029B1D88800CC8DB2 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED7653EF29B1D88800CC8DB2 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EDE3210029B0B11300FD3549 /* Project object */;
 }
