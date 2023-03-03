@@ -23,6 +23,7 @@ public final class AppCoordinator: Coordinator {
     }
 
     func showMainScene() {
+        mainNavigationController.isNavigationBarHidden = true
         homeCoordinator = HomeCoordinator(rootViewController: mainNavigationController)
         homeCoordinator?.start()
         window.rootViewController = homeCoordinator?.rootViewController

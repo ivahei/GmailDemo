@@ -27,7 +27,7 @@ final class HomeViewController: ViewController<HomeViewModel, HomeCoordinator> {
                 guard let tableView = self?.tableView else { return }
     
                 UIView.transition(with: tableView,
-                                  duration: 0.3,
+                                  duration: 0.2,
                                   options: .transitionCrossDissolve) {
                     tableView.reloadData()
                 }
@@ -71,6 +71,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withCellType: MessageTableViewCell.self,
                                                  forIndexPath: indexPath)
         cell.cellModel = viewModel.mails?[indexPath.row]
+        cell.delegate = self
         return cell
     }
     
@@ -108,6 +109,16 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     private func removeFromTableView(_ tableView: UITableView, indexPath: IndexPath, close: @escaping (Bool) -> Void) {
         viewModel.removeItem(at: indexPath.row)
         close(false)
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        viewModel.selectItem(at: indexPath.row)
+    }
+}
+
+extension HomeViewController: MessageCellInteractionDelegate {
+    func didTapOnFavorite(id: UUID?, isFavorite: Bool) {
+        viewModel.updateFavorite(with: id, isFavorite: isFavorite)
     }
 }
 
