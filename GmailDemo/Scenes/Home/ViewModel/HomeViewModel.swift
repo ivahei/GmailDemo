@@ -15,7 +15,7 @@ final class HomeServiceInput {
 }
 
 final class HomeViewModel: BaseViewModel<HomeServiceInput>, ObservableObject {
-    
+
     @Published private(set) var mails: [MessageTableViewCellModel]?
 
     override func configureOutput() {
@@ -28,14 +28,34 @@ final class HomeViewModel: BaseViewModel<HomeServiceInput>, ObservableObject {
                                                        sender: mail.sender,
                                                        time: mail.time,
                                                        title: mail.title,
-                                                       message: mail.message))
+                                                       message: mail.message,
+                                                       isFavorite: mail.isFavorite,
+                                                       isSeen: mail.isSeen))
         }
         mails = tempMails
     }
-    
+
     func removeItem(at index: Int) {
         var temp = mails ?? []
         temp.remove(at: index)
         mails = temp
+    }
+    
+    func selectItem(at index: Int) {
+        if var mails {
+            var mail = mails[index]
+            mail.isSeen = true
+            mails[index] = mail
+            self.mails = mails
+        }
+    }
+
+    func updateFavorite(with id: UUID?, isFavorite: Bool) {
+        if let id, var mails, let index = mails.firstIndex(where: { $0.id == id }) {
+            var mail = mails[index]
+            mail.isFavorite = isFavorite
+            mails[index] = mail
+            self.mails = mails
+        }
     }
 }

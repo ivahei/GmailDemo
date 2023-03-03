@@ -16,4 +16,5 @@ struct Mail: Codable {
     let title: String
     let message: String
     var isFavorite: Bool = false
+    var isSeen: Bool = false
 }

@@ -26,6 +26,10 @@
 		ED932FA829B20604008EDE22 /* MailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED932FA729B20604008EDE22 /* MailModel.swift */; };
 		ED932FAF29B2210F008EDE22 /* ComposeEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED932FAD29B2210F008EDE22 /* ComposeEmailViewController.swift */; };
 		ED932FB029B2210F008EDE22 /* ComposeEmailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED932FAE29B2210F008EDE22 /* ComposeEmailViewController.xib */; };
+		ED932FB229B22253008EDE22 /* ComposeEmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED932FB129B22253008EDE22 /* ComposeEmailViewModel.swift */; };
+		ED932FB429B22282008EDE22 /* ComposeEmailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED932FB329B22282008EDE22 /* ComposeEmailCoordinator.swift */; };
+		ED932FB729B2230E008EDE22 /* ComposeEmailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED932FB629B2230E008EDE22 /* ComposeEmailService.swift */; };
+		ED932FBB29B229C6008EDE22 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED932FBA29B229C6008EDE22 /* UIViewController+Extension.swift */; };
 		EDE3210C29B0B11300FD3549 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE3210B29B0B11300FD3549 /* AppDelegate.swift */; };
 		EDE3211529B0B11500FD3549 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDE3211429B0B11500FD3549 /* Assets.xcassets */; };
 		EDE3211829B0B11500FD3549 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDE3211629B0B11500FD3549 /* LaunchScreen.storyboard */; };
@@ -55,6 +59,10 @@
 		ED932FA729B20604008EDE22 /* MailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailModel.swift; sourceTree = "<group>"; };
 		ED932FAD29B2210F008EDE22 /* ComposeEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeEmailViewController.swift; sourceTree = "<group>"; };
 		ED932FAE29B2210F008EDE22 /* ComposeEmailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComposeEmailViewController.xib; sourceTree = "<group>"; };
+		ED932FB129B22253008EDE22 /* ComposeEmailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeEmailViewModel.swift; sourceTree = "<group>"; };
+		ED932FB329B22282008EDE22 /* ComposeEmailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeEmailCoordinator.swift; sourceTree = "<group>"; };
+		ED932FB629B2230E008EDE22 /* ComposeEmailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeEmailService.swift; sourceTree = "<group>"; };
+		ED932FBA29B229C6008EDE22 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		EDE3210829B0B11300FD3549 /* GmailDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GmailDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDE3210B29B0B11300FD3549 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDE3211429B0B11500FD3549 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -148,6 +156,7 @@
 				ED7653E929B10C8200CC8DB2 /* UIView+Extension.swift */,
 				ED7653EB29B110DF00CC8DB2 /* String+Extension.swift */,
 				ED7653ED29B1126B00CC8DB2 /* UIColor+Extension.swift */,
+				ED932FBA29B229C6008EDE22 /* UIViewController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -180,8 +189,10 @@
 		ED932FAA29B22074008EDE22 /* ComposeEmail */ = {
 			isa = PBXGroup;
 			children = (
+				ED932FB329B22282008EDE22 /* ComposeEmailCoordinator.swift */,
 				ED932FAB29B220A3008EDE22 /* View */,
 				ED932FAC29B220B3008EDE22 /* ViewModel */,
+				ED932FB529B222F2008EDE22 /* Service */,
 			);
 			path = ComposeEmail;
 			sourceTree = "<group>";
@@ -198,8 +209,17 @@
 		ED932FAC29B220B3008EDE22 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				ED932FB129B22253008EDE22 /* ComposeEmailViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ED932FB529B222F2008EDE22 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				ED932FB629B2230E008EDE22 /* ComposeEmailService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		EDE320FF29B0B11300FD3549 = {
@@ -346,14 +366,18 @@
 			files = (
 				ED7653EC29B110DF00CC8DB2 /* String+Extension.swift in Sources */,
 				EDE3212529B0BB6300FD3549 /* HomeViewController.swift in Sources */,
+				ED932FB429B22282008EDE22 /* ComposeEmailCoordinator.swift in Sources */,
+				ED932FB729B2230E008EDE22 /* ComposeEmailService.swift in Sources */,
 				EDE3212B29B0BBBA00FD3549 /* HomeViewModel.swift in Sources */,
 				ED7653D829B0E13800CC8DB2 /* SceneDelegate.swift in Sources */,
+				ED932FB229B22253008EDE22 /* ComposeEmailViewModel.swift in Sources */,
 				ED7653EE29B1126B00CC8DB2 /* UIColor+Extension.swift in Sources */,
 				ED7653EA29B10C8200CC8DB2 /* UIView+Extension.swift in Sources */,
 				ED7653DC29B0FE3800CC8DB2 /* MessageTableViewCell.swift in Sources */,
 				ED932FA629B202F7008EDE22 /* HomeService.swift in Sources */,
 				ED7653E329B1063600CC8DB2 /* MessageTableViewCellModel.swift in Sources */,
 				ED7653E129B104E000CC8DB2 /* AvatarView.swift in Sources */,
+				ED932FBB29B229C6008EDE22 /* UIViewController+Extension.swift in Sources */,
 				ED7653D629B0CFB600CC8DB2 /* HomeCoordinator.swift in Sources */,
 				EDE3212029B0B26B00FD3549 /* ViewController.swift in Sources */,
 				EDE3210C29B0B11300FD3549 /* AppDelegate.swift in Sources */,

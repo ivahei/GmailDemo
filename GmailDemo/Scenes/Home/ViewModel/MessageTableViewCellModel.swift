@@ -15,5 +15,6 @@ struct MessageTableViewCellModel: Equatable {
     let time: String
     let title: String
     let message: String
-    var isFavorite: Bool = false
+    var isFavorite: Bool
+    var isSeen: Bool
 }

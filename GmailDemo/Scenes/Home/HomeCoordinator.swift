@@ -9,7 +9,7 @@ import UIKit
 
 final class HomeCoordinator: BaseCoordinator<UINavigationController> {
     
-//    private var composeEmailCoordinator: ComposeEmailCoordinator?
+    private var composeEmailCoordinator: ComposeEmailCoordinator?
 
     override func start() {
         let vc = HomeViewController.makeViewController()
@@ -21,9 +21,8 @@ final class HomeCoordinator: BaseCoordinator<UINavigationController> {
         let navigationVC = UINavigationController()
         navigationVC.navigationController?.isNavigationBarHidden = false
 
-//        composeEmailCoordinator = ComposeEmailCoordinator(with: navigationModel,
-//                                                          presentOn: navigationVC,
-//                                                          rootViewController: navigationVC)
-//        composeEmailCoordinator?.start()
+        composeEmailCoordinator = ComposeEmailCoordinator(presentOn: rootViewController,
+                                                          rootViewController: navigationVC)
+        composeEmailCoordinator?.start()
     }
 }
